@@ -27,16 +27,20 @@ main{
 
 #login{
     background-color: white;
-    width: 200px;
+    width: 250px;
     height: 500px;
     border-radius: 20px;
     position: absolute;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease ;
 }
 
 #login > #imagem{
@@ -51,4 +55,13 @@ main{
 #login > #formulario{
     padding: 10px;
     display: block;
+}
+
+#login > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#login > p{
+    font-size: 0.8em;
 }
